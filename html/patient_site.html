@@ -9,8 +9,9 @@
     <link href="/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
     <script src="/js/login.js"></script>
-    <title>Document</title>
+    <title>Patient Site</title>
 </head>
 <body>
     <div class="parent_container">
@@ -18,26 +19,11 @@
         <div class="moon">
             <i class="fa-regular fa-moon pt-2" style="padding-left:14px;"></i>
         </div>
-        <img src="/images/11116016_415-removebg-preview.png" class="bg-image">
         
-        <div class="login">
-
-            <div class="back text-primaryy"><a href="patient_login.html" class="text-primaryy">&lt Back</a></div>
-            <h2 class="heading">Reset Your Password</h2>
-            
-            <!-- email and pwd login  -->
-            <form id="loginForm">
-                <div class="form-floating my-3">
-                    <input type="text" class="form-control form-field" id="floatingInputName" placeholder="enter username">
-                    <label for="floatingInputName">Username</label>
-                    <img src="/images/person-circle.svg" class="icon">
-                </div>
-            
-                <button class="btn btn-primary w-100 mb-3">Reset Password</button>
-                <p class="ml-3" style="text-align:center;"><a class="anchor text-primaryy" href="patient_login.html">&lt Back to Login</a></p>
-            </form>
-
-        </div> 
+        <form id="loginForm">
+            <a href="patient_submit_request.html" class="btn btn-primary w-100 mb-3" style="padding:12px;">Submit a Request</a>
+            <a href="patient_login.html" class="btn btn-primary w-100 mb-3" style="padding:12px 80px; background-color: #0e1555;">Registered Patient</a>
+        </form>
 
         <div class="endLinks">
             <a href="#" class="TNC text-secondary">Terms and Conditions</a> | <a href="#" class="PP text-secondary">Privacy Policy</a>
