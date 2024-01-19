@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="/js/login.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
+    <title>Patient Request</title>
+</head>
+<body class="request_screen">
+    
+    <header class="bg-body position-sticky w-100 top-0">
+        <img src="/images/Fig56._Patient_site_1-removebg-preview.png" class="halloDoc_sr">
+    </header>
+
+    <div class="moon">
+        <i class="fa-regular fa-moon pt-2" style="padding-left:14px;"></i>
+    </div>
+
+    <div class="back back_normal text-primaryy"  style="padding:7px 7px 7px 12px;"><a href="patient_submit_request.html" class="text-primaryy">&lt Back</a></div>
+   
+    <div class="h-100 w-100">
+        <div class="shadow bg-body container-fluid mt-3" style="border-radius:5px; width:60%; height:650px; overflow-y:auto; overflow-x:hidden;">
+            <form class="form" id="patient_request_form">
+
+                <!-- concierge information ************************************************************************ -->
+                <h4 class="my-3 mt-2 heading">Concierge Information</h4>
+                <div class="row my-3">
+                    <div class="col-6 form-group form-floating mb-3">
+                        <input type="text" id="conciergeName" class="form-control form-field" placeholder="firstName">
+                        <label class="ml-3" for="conciergeName">Your First Name</label>
+                    </div>
+
+                    <div class="col-6 form-group form-floating mb-3">
+                        <input type="text" id="conciergeLastName" class="form-control form-field" placeholder="lastName">
+                        <label class="ml-3" for="conciergeLastName">Your Last Name</label>
+                    </div>
+                </div>
+
+                <div class="row my-3">
+                    <div class="col-6 form-group form-floating mb-3">
+                        <input id="phone1" type="tel" class="w-100 form-field phone form-control" name="phone" />
+                    </div>
+
+                    <div class="col-6 form-group form-floating mb-3">
+                        <input type="email" id="conciergeEmail" class="form-control form-field" placeholder="email">
+                        <label class="ml-3" for="conciergeEmail">Your Email</label>
+                    </div>
+                </div>
+                <div class="row  my-3">
+                    <div class="col-6 form-group form-floating">
+                        <input type="text" class="form-control form-field" id="hotelname" placeholder="hotelname">
+                        <label class="ml-3" for="hotelname">Hotel/Property Name</label>
+                    </div>
+                </div>
+
+                <!-- concierge location  ******************************************************************************-->
+                <h4 class="my-3 mt-2 heading">Concierge Location</h4>
+                <div class="row my-3">
+                    <div class="col-6 form-group form-floating mb-3">
+                        <input type="text" id="conciergeStreet" class="form-control form-field" placeholder="street">
+                        <label class="ml-3" for="conciergeStreet">Street</label>
+                    </div>
+
+                    <div class="col-6 form-group form-floating mb-3">
+                        <input type="text" id="conciergeCity" class="form-control form-field" placeholder="city">
+                        <label class="ml-3" for="conciergeCity">City</label>
+                    </div>
+                </div>
+
+                <div class="row my-3">
+                    <div class="col-6 form-group form-floating mb-3">
+                        <input type="text" id="conciergeState" class="form-control form-field" placeholder="state">
+                        <label class="ml-3" for="conciergeState">State</label>
+                    </div>
+
+                    <div class="col-6 form-group form-floating mb-3">
+                        <input type="email" id="conciergeZip" class="form-control form-field" placeholder="Zip">
+                        <label class="ml-3" for="conciergeZip">Zip Code</label>
+                    </div>
+                </div>
+                <!-- patient information ******************************************************************************* -->
+                <h4 class="my-3 mt-2 heading">Patient Information</h4>
+                <div class="form-floating form-group first_section ">
+                    <textarea type="text" class="form-control form-field mb-3" id="symptoms" rows="4" placeholder="Enter brief details of Symptoms(Optional)"></textarea>
+                    <label for="sympotoms">Enter brief details of Symptoms(Optional)</label>
+                </div>
+
+                <div class="row my-3">
+                    <div class="col-6 form-group form-floating mb-3">
+                        <input type="text" id="firstName" class="form-control form-field" placeholder=" First Name">
+                        <label class="ml-3" for="firstName">First Name</label>
+                    </div>
+
+                    <div class="col-6 form-group form-floating mb-3">
+                        <input type="text" id="lastName" class="form-control form-field" placeholder="LastName">
+                        <label class="ml-3" for="lastName">Last Name</label>
+                    </div>
+                </div>
+
+                <div class="row  my-3">
+                    <div class="col-6 form-group form-floating">
+                        <input type="date" class="form-control form-field" id="birthDate" placeholder="Birth Date">
+                        <label class="ml-3" for="birthDate">Date of Birth</label>
+                    </div>
+                </div>
+                
+                <!-- patient contact information ************************************************************************ -->
+                <!-- <br><br> -->
+                <h4 class="my-3 mt-2 heading">Patient Contact Information</h4>
+                <div class="row my-3">
+                    <div class="col-6 form-group form-floating mb-3">
+                        <input type="email" id="email" class="form-control form-field" placeholder="Email">
+                        <label class="ml-3" for="email">Email</label>
+                    </div>
+
+                    <div class="col-6 form-group form-floating mb-3">
+                        <input id="phone2" type="tel" class="w-100 form-field phone form-control" name="phone" />
+                    </div>
+                </div>
+
+                <!-- patient location *********************************************************************************** -->
+
+                <h4 class="my-3 mt-2 heading">Patient Location</h4>
+                <div class="row my-3">
+                    <div class="col-6 form-group form-floating mb-3">
+                        <input type="text" id="street" class="form-control form-field" placeholder="Street">
+                        <label class="ml-3" for="street">Street</label>
+                    </div>
+
+                    <div class="col-6 form-group form-floating mb-3">
+                        <input type="text" id="city" class="form-control form-field" placeholder="City">
+                        <label class="ml-3" for="city">City</label>
+                    </div>
+                </div>
+
+                <div class="row my-3">
+                    <div class="col-6 form-group form-floating mb-3">
+                        <input type="text" id="state" class="form-control form-field" placeholder="State">
+                        <label class="ml-3" for="state">State</label>
+                    </div>
+
+                    <div class="col-6 form-group form-floating mb-3">
+                        <input type="number" id="zipcode" class="form-control form-field" placeholder="Zipcode">
+                        <label class="ml-3" for="zipcode">Zip Code</label>
+                    </div>
+                </div>
+                <div class="row  my-3">
+                    <div class="col-6 form-group form-floating">
+                        <input type="text" class="form-control form-field" id="room" placeholder="room">
+                        <label class="ml-3" for="room">Room#/Suite(Optional)</label>
+                    </div>
+                </div>
+          
+                <div class="submit_and_cancel d-flex justify-content-end mb-3">
+                    <a class="btn btn-primary mr-3" href="#">Submit</a>
+                    <a class="btn text-primaryy cancel_button" href="patient_submit_request.html">Cancel</a>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <div class="footer_sr">
+        <div class="endLinks_sr">
+            <a href="#" class="TNC text-secondary endLinks_text">Terms and Conditions</a> | <a href="#" class="endLinks_text PP text-secondary">Privacy Policy</a>
+        </div>
+    </div>
+
+    <script>
+        const phoneInputField = document.querySelectorAll(".phone");
+        phoneInputField.forEach(element =>window.intlTelInput(element,{utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",}));
+    </script>
+</body>
+</html>

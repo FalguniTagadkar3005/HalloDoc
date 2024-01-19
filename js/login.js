@@ -11,4 +11,12 @@ $(document).on('click', '#password_icon', function() {
   
 });
 
+function selected() {
+  var v = document.getElementById("upload_patient_doc");
+  if (v.files.length != 0) {
+      debugger;
+      document.getElementById("selected_file").innerText = v.files[0].name;
+  }
+}
+
 
