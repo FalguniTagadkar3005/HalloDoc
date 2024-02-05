@@ -10,14 +10,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="/js/login.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
 
     <title>Patient Request</title>
+    <script>
+        $(document).ready(function(){
+            $("#exampleModalCenter").modal('show');
+       });
+   </script>
 </head>
 <body class="request_screen">
     
+    <!-- modal on load of the page  -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body text-secondary d-flex flex-column justify-content-center align-items-center">
+            
+                <img src="/images/modal_icon-removebg-preview.png" style="width:200px; height:100px;">
+                 <h5 class="text-dark">Information</h5>
+                
+              When submitting a request,you must provide the correct contact information for the patient 
+              or the responsible party.Failure to provide the correct email and phone number will delay service
+              or decline. 
+              <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button> 
+            </div>
+          </div>
+        </div>
+    </div>
+
     <header class="bg-body position-sticky w-100 top-0">
         <img src="/images/Fig56._Patient_site_1-removebg-preview.png" class="halloDoc_sr">
     </header>
